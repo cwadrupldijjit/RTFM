@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" ng-app="ForumApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>RTFM</title>
+		
+		<link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+		<link rel="stylesheet" href="css/main-styles.css">
+	</head>
+	
+	<body>
+		<header>
+			<div class="main-menu">
+				<nav>Home</nav>
+				<nav ng-if="true">Account</nav>
+				<nav ng-if="true">Personal Messages</nav>
+				<nav ng-if="true">Log out</nav>
+				<nav ng-if="true">Log in</nav>
+			</div>
+		</header>
+		
+		<hr>
+		
+		<article>
+			<ng-view></ng-view>
+		</article>
+		
+		<hr>
+		
+		<footer>
+			Brought to you by Samuel Skeen Development and Design
+		</footer>
+		
+		<script src="bower_components/angular/angular.min.js"></script>
+		<script src="bower_components/angular-route/angular-route.min.js"></script>
+		<script src="bower_components/firebase/firebase.js"></script>
+		<script src="bower_components/angularfire/dist/angularfire.min.js"></script>
+		<script src="bower_components/angular-material/angular-material.min.js"></script>
+		<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+		<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/controllers.js"></script>
+		<script src="js/directives.js"></script>
+		<script src="js/services.js"></script>
+	</body>
+</html>
