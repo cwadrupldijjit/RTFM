@@ -1,0 +1,14 @@
+<div>
+	<!--<base href="../">-->
+	<div>
+		<p ng-hide="vm.threads">
+			There are currently no posts or threads on this forum.  Use the button below to create a new thread.
+		</p>
+		
+		<div ng-repeat="thread in vm.threads">
+			{{ thread.title }} test
+		</div>
+		
+		<md-button class="md-raised md-primary" ng-click="vm.createThread()" value="Create a Thread">Create a Thread</md-button>
+	</div>
+</div>
