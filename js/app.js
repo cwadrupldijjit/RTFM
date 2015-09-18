@@ -67,16 +67,16 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 	// })
 }]);
 
-app.animation('.toggle-fade', [function() {
-	return {
-		enter: function(element, doneFn) {
-			jQuery(element).fadeIn(500, doneFn);
-			setTimeout(function() {
-				this.leave;
-			}, 5000);
-		},
-		leave: function(element, doneFn) {
-			jQuery(element).fadeOut(500, doneFn);
-		}
-	}
-}]);
+// app.animation('.toggle-fade', [function() {
+// 	return {
+// 		enter: function(element, doneFn) {
+// 			jQuery(element).fadeIn(500, doneFn);
+// 			setTimeout(function() {
+// 				this.leave;
+// 			}, 5000);
+// 		},
+// 		leave: function(element, doneFn) {
+// 			jQuery(element).fadeOut(500, doneFn);
+// 		}
+// 	}
+// }]);
