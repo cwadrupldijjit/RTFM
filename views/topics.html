@@ -1,15 +1,16 @@
-<div>
-	<!--<base href="../">-->
-	<div>
-		<p ng-hide="vm.topics">
-			There are currently no posts or threads on this forum.  Use the button below to create a new thread.
-		</p>
-		
+<div id="topics-view" class="route-frame">
+	<p ng-hide="vm.topics">
+		There are currently no posts or threads on this forum.  Use the button below to create a new thread.
+	</p>
+	
+	<div class="posts-container">
 		<md-card ng-repeat="thread in vm.topics">
 			<h3>{{ thread.title }}</h3>
-			<p>{{ thread.content | limitTo: 75 }}</p>
+			<p class="post-quick-descr">{{ thread.content | limitTo: 200 }}<span ng-if="thread.content.length > 200">...</span></p>
 		</md-card>
-		
+	</div>
+	
+	<div class="cling-bottom">
 		<md-button class="md-raised md-primary" ng-click="vm.createThread()" value="Create a Thread">Create a Thread</md-button>
 	</div>
 </div>

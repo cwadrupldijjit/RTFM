@@ -1,4 +1,42 @@
-.toggle-fade.ng-enter {
+ng-view {
+	outline: 2px solid black;
+}
+
+.route-frame {
+	position: relative;
+	
+	max-height: 700px;
+	
+	overflow: auto;
+}
+
+.post-quick-descr {
+	color: darkgray;
+}
+
+.post-quick-descr:hover {
+	color: black;
+}
+
+.cling-bottom {
+	width: 100%;
+	
+	background-color: white;
+	
+	position: fixed;
+	left: 0;
+	bottom: 0;
+}
+
+footer {
+	padding: 4px 9px 50px 9px;
+}
+
+/*.posts-container md-card:last-child {
+	margin-bottom: 100px;
+}*/
+
+/*.toggle-fade.ng-enter {
 	transition: 0.5s linear all;
 	opacity: 0;
 }
@@ -14,4 +52,4 @@
 
 .toggle-fade.ng-leave.ng-leave-active {
 	opacity: 0;
-}
+}*/
